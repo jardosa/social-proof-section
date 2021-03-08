@@ -1,0 +1,80 @@
+@font-face {
+  font-family: Spartan_400;
+  src: url("Spartan/Spartan-VariableFont_wght.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Spartan_500;
+  src: url("Spartan/Spartan-VariableFont_wght.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Spartan_700;
+  src: url("Spartan/Spartan-VariableFont_wght.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --soft-pink: hsl(333, 80%, 67%);  
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+.outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.inner-container {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1440px;
+}
+
+.left-flex {
+    flex: 0 0 50%;
+}
+
+.container {
+    width: 360px;
+}
+
+.right-flex {
+    flex: 0 0 50%;
+    
+}
+
+.bottom-flex {
+    flex: 1 0 100%;
+    display: flex;
+}
+
+.secondary{
+     color: var(--dark-grayish-magenta);
+}
+
+
+.huge-text {
+  font-family: Spartan_700;
+  font-weight: 700;
+  font-size: 42px;
+  color:var(--very-dark-magenta);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
