@@ -35,6 +35,7 @@
     max-width: 1440px;
     margin: auto;
     
+    
 }
 
 .inner-container {
@@ -42,7 +43,6 @@
     flex-flow: row wrap;
     width: 70vw;
     height: 40vw;
-
 }
 
 .left-flex {
@@ -71,6 +71,8 @@
     font-family: Spartan_500;
     font-weight: bold;
     font-size: 14px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .right-flex div:first-of-type {
@@ -157,4 +159,73 @@ img{
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 375px){
+
+    .outer-container{
+        display: block;
+        max-width: 375px;
+    }
+
+    .inner-container{
+        max-width: inherit;
+        width: 100vw;
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    .left-flex{
+        text-align: center;
+    }
+
+    .right-flex{
+        display: flex;
+        flex-flow: column wrap;
+        width: 90%;
+    }
+
+    .highlights{
+        align-self: center;
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+    }
+    .highlights div{
+        padding: 5px 0;
+    }
+
+    .bottom-flex {
+        display: flex;
+        flex-flow: column wrap;
+        
+    }
+
+    .review {
+        margin-bottom: 20px;
+        width: 90%;
+    }
+
+    .review:first-of-type{
+        align-self: center;
+    }
+    .review:nth-of-type(2){
+        align-self: center;
+    }
+    .review:last-of-type{
+        align-self: center;
+    }
+
+    .review div:last-of-type{
+        width: 80%;
+        height: 50%;
+        text-align: left;
+    }
+
+    .person {
+        margin-left: -100px;
+    }
+
+    
 }
